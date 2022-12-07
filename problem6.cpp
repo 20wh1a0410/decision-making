@@ -4,9 +4,18 @@ int main(){
 	int a;
 	char ch;
 	cin>>ch>>a;
-	if((a%2==0&&(ch=='a'||'c'||'e'||'g'))||(a%2!=1&&(ch=='b'||'d'||'f'||'h')))
-	cout<<"square is white";
-	else
-	cout<<"square is black";
+	
+	if(ch=='a'||ch=='c'||ch=='e'||ch=='g') {
+		if(a%2==0)
+		cout<<"white";
+		else cout<<"black";
+		
+	} else {
+		if(a%2==0)
+		cout<<"black";
+		else cout<<"white";
+		
+	}
+
 	return 0;
 }
